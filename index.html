@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rekomendasi Pariwisata Kabupaten Sukabumi</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles */
+    .carousel-item img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Set image size in carousel */
+    .carousel-item img {
+      height: 400px; /* Set tinggi tetap */
+      width: auto; /* Atur lebar otomatis */
+    }
+
+    /* Set image size in accordion */
+    .card-body img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> <!-- Tambahkan kelas fixed-top di sini -->
+  <a class="navbar-brand" href="#">
+    <img src="./assets/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Pariwisata Kabupaten Sukabumi
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Geopark Ciletuh</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">Situ Gunung</a>
+      </li>
+      <!-- Add more navigation links here -->
+    </ul>
+    <span id="current-time" class="ml-auto"></span> <!-- Pindahkan ke sini dan tambahkan kelas ml-auto -->
+  </div>
+</nav>
+
+
+  <!-- Carousel -->
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/Geopark.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/Situ.png" class="d-block w-100" alt="...">
+      </div>
+      <!-- Add more carousel items here -->
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- End of Carousel -->
+
+  <!-- Content Section 1 -->
+  <section id="section1" class="container mt-5">
+    <h1>Geopark Ciletuh</h1>
+    <!-- Accordion -->
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Destinasi 1
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <h2>1. Puncak Darma</h2>
+            <img src="./assets/Darma.png" alt="1">
+            <p>Puncak Darma yang berada di ketinggian lebih dari 230 meter menawarkan pemandangan indahnya garis pantai di sana. Menjadi lokasi paling pas untuk bisa menyaksikan keindahan pantai, hutan, dan air terjun di Geopark Ciletuh. Kamu bisa menikmati sunrise dan juga sunset dari Puncak Darma. Perpaduan sawah dan hutan yang menghijau, aliran sungai, dan birunya laut, bakal membius kamu.</p>
+          </div>
+          <div class="card-body">
+            <h2>2. Bukit Panenjoan</h2>
+            <img src="./assets/Bukit.png" alt="2">
+            <p>Bukit Panenjoan merupakan spot untuk menikmati pemandangan alam di Geopark Ciletuh. Apalagi ada spot selfie yang cukup ngehits dengan background alam yang istimewa. Tak hanya sekadar menawarkan pemandangan indah, di Bukit Panenjoan juga terdapat banyak penginapan murah yang dapat kamu sewa untuk bermalam. Tiket masuk ke tempat wisata ini juga tidak terlalu mahal, karena hanya perlu membayar sekitar Rp 5 ribu per orang.</p>
+          </div>
+          <div class="card-body">
+            <h2>3. Pantai Palangpang</h2>
+            <img src="./assets/Palangpang.png" alt="3">
+            <p>Pantai Palangpang mungkin bisa dibilang sebagai pintu masuk untuk menikmati indahnya laut yang ada di kawasan Geopark Ciletuh. Pasir pantai yang berwarna kecoklatan berpadu dengan laut yang indah. Tak hanya itu, garis pantainya yang luas sangat cocok untuk kamu yang ingin berjalan-jalan atau sekadar santai di sekitar bibir pantai. Jika kamu berniat mengunjungi Pantai Palangpang, kamu hanya perlu membawar sekitar Rp 5 ribu untuk biaya masuknya.
+            </p>
+          </div>
+          <div class="card-body">
+            <h2>4. Curug Cimarinjung</h2>
+            <img src="./assets/Curug.png" alt="4">
+            <p>Aliran air Curug Cimarinjung terlihat dari pantai Palangpang. Untuk sampai ke air terjun ini, kamu hanya perlu jalan kaki beberapa sekitar 1 km dari pantai. Dari dekat, aliran airnya cukup besar dan tampak megah karena tebingnya terdiri dari batuan besar yang di atasnya ditumbuhi tumbuhan hijau. Bebatuan di sini tampak tak biasa, melainkan terlihat klasik seperti bebatuan jaman purba.</p>
+          </div>
+          <div class="card-body">
+            <h2>5. Curug Sodong</h2>
+            <img src="./assets/Sodong.png" alt="5">
+            <p>Objek wisata di Geopark Ciletuh selanjutnya yang sayang untuk dilewatkan adalah Curug Sodong. Banyak pula yang menyebut air terjun ini sebagai Curug Kembar. Curug Sodong memang memiliki dua aliran air yang cukup besar yang mengalir berdampingan. Di balik air terjun ini terdapat cekungan yang bentuknya menyerupai gua. Oleh karenanya, objek wisata ini disematkan kata “sodong” yang diambil dari bahasa Sunda yang berarti gua.</p>
+          </div>
+          <div class="card-body">
+            <h2>6. Curug Cikanteh</h2>
+            <img src="./assets/Cikanteh.png" alt="6">
+            <p>Curug yang berada dalam kawasan Geopark Ciletuh ini memiliki ketinggian sekitar 60 meter dengan aliran air yang deras.Kesegaran dan keindahan alam yang akan didapatkan membuat Curug Cikanteh cukup populer di kalangan pengunjung.
+            </p>
+          </div>
+          <div class="card-body">
+            <h2>7. Puncak Tugu</h2>
+            <img src="./assets/Tugu.png" alt="7">
+            <p>Puncak Tugu bisa dibilang sebagai salah satu spot paling pas untuk menikmati pemandangan alam Geopark Ciletuh bersama pasangan. Lokasinya yang mudah dijangkau dan panorama alamnya yang indah membuat destinasi wisata ini cukup populer di kawasan Geopark Ciletuh. Kamu juga bisa melihat sunrise, sunset, atau menyaksikan panorama malam hari yang indah dari tempat ini. Kamu juga bisa menginap dengan menyewa tenda yang disediakan di sana. Cukup siapkan uang sebesar Rp 5 ribu hingga 10 ribu untuk masuk ke Puncak Tugu.</p>
+          </div>
+          <div class="card-body">
+            <h2>8. Pantai Ujung Genteng</h2>
+            <img src="./assets/Ujung.png" alt="8">
+            <p>Mungkin kamu sudah cukup mengenal Pantai Ujung Genteng yang ada di Sukabumi. Ya, pantai yang masih termasuk kawasan Geopark Ciletuh itu sangat terkenal akan keindahan alamnya. Saat tiba di sana, kamu akan disambut pasir putih pantai yang indah dan bibir pantai yang bersentuhan langsung dengan Samudera Hindia. Jadi wajar saja, jika Pantai Ujung Genteng memiliki garis pantai yang cukup panjang, yaitu sekitar 16 km.</p>
+          </div>
+          <div class="card-body">
+            <h2>9. Pantai Cimaja</h2>
+            <img src="./assets/Cimaja.png" alt="9">
+            <p>Pantai Cimaja merupakan tempat yang pas didatangi untuk belajar surfing. Ombak yang ideal untuk berselancar dan garis pantai yang panjang, membuat beraktivitas disini sangat menyenangkan.</p>
+          </div>
+          <div class="card-body">
+            <h2>10. Curug Awang</h2>
+            <img src="./assets/Awang.png" alt="10">
+            <p>Bagi yang ingin mengunjungi curug ini, kamu harus bersiap melintasi jalanan yang terjal di tengah hutan dan perkebunan milik warga setempat. Kamu harus menempuh perjalanan beberapa ratus meter sebelum mencapai pintu masuk curug dan berhati-hati saat mengendarai kendaraanmu. Meskipun cukup sulit, semuanya akan terbayar dengan pemandangan indah dari Curug Awang. Sayangnya, karena debit airnya yang besar, kamu tidak disarankan untuk bermain air di sana.</p>
+          </div>
+          <div class="card-body">
+            <h2>11. Pulau kunti</h2>
+            <img src="./assets/Kunti.png" alt="11">
+            <p> Dari sekian banyak tempat menarik di kawasan Geopark Ciletuh, Kabupaten Sukabumi, Jawa Barat, ada sebuah pulau yang cukup indah, yaitu Pulau Kunti. Meski namanya menjadi perdebatan, apakah berasal dari nama Dewi Kunti dalam dunia pewayangan atau kisah kuntilanak sejenis hantu gentayangan khas Indonesia. Pulau Kunti bisa menjadi pilihan eksplorasi para wisatawan yang mendambakan suasana alami. Selain menikmati indahnya panorama pantai, para pengunjung juga bisa melakukan diving, snorkling, dan memancing.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more accordion items here -->
+    </div>
+  </section>
+
+  <!-- Content Section 2 -->
+  <section id="section2" class="container">
+    <h1>Situ Gunung</h1>
+    <!-- Accordion -->
+    <div id="accordion2">
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Destinasi 2
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
+          <div class="card-body">
+            <h2>1. Danau Situ Gunung</h2>
+            <img src="./assets/Danau.png" alt="1">
+            <p>Danau Situ Gunung adalah spot menarik yang harus kamu kunjungi. Danau Situ Gunung ada di ketinggian sekitar 850 mdpl dan letaknya ada di kaki Gunung Gede Pangrango.
+            Untuk lokasi danau Situ Gunung berjarak sekitar 16 km dari pusat Kota Sukabumi. Termasuk wisata yang dekat bagi kamu yang ingin menikmati keindahan alam yang masih segar.  
+            Danau ini masih dikelilingi hutan pinus yang lebat. Sehingga membuat pemandangan di sekitarnya begitu hijau dan nampak asri. Banyak pepohonan di danau Situ Gunung membuat udara terasa segar saat dihirup.</p>
+          </div>
+          <div class="card-body">
+            <h2>2. Jembatan Situ Gunung</h2>
+            <img src="./assets/Bridge.png" alt="2">
+            <p>Jembatan Situ Gunung atau Suspension Bridge Situ Gunung merupakan tempat wisata yang dekat Kota Sukabumi. Jembatan Gantung ini diklaim menjadi terpanjang di Asia dengan panjangnya sekitar 243 meter. 
+            Bagi kamu yang ini berliburan ke tempat Wisata ini, ada beberapa paket yang dapat dipilih. Paket pertama Rp 50.000, Paket kedua Rp 75.000 dan Paket ketiga Rp 100.000.</p>
+          </div>
+          <div class="card-body">
+            <h2>3. Curug Sawer</h2>
+            <img src="./assets/Sawer.png" alt="3">
+            <p>Spot menarik selanjutnya yang ada di Situ Gunung adalah Curug Sawer. Air terjun ini terletak di kawasan wisata Situ Gunung dan memiliki ketinggian hampir 30 meter.
+            Menikmati keindahan Curug Sawer, pengunjung hanya harus mengeluarkan biaya Rp 15.000 Dewasa dan Rp 10.000 Anak-anak. Buka setiap hari dari pukul 07.00-18.00, kamu bisa menikmati panorama air terjun dengan air jernih dan menyegarkan.</p>
+          </div>
+          <div class="card-body">
+            <h2>4. Curug Kembar</h2>
+            <img src="./assets/Kembar.png" alt="4">
+            <p>Curug Kembar merupakan salah satu spot menarik yang ada di Situ Gunung. Curug ini letaknya ada di sebuah lembah bernama Lembah Purba. Untuk sampai ke tempat ini kamu perlu menyiapkan fisik dan mental yang prima.
+            Pasalnya, perjalanan yang ditempuh cukup panjang dan melelahkan. Sekitar 6 kilometer untuk total perjalanan pulang pergi, durasi waktu yang ditempuh bisa sampai 2 jam lamanya. Namun hal itu tergantung dari seberapa cepat berjalan.
+            Jika kamu ingin datang ke spot menarik ini, diharuskan pakai jasa guide. Ada beberapa paket yang ditawarkan seperti membayar Rp400.000 untuk 4 orang. Namun paket itu sudah termasuk tiket masuk suspension bridge Sukabumi, Curug Kembar, hingga makan siang.</p>
+          </div>
+          <div class="card-body">
+            <h2>5. Flying Fox</h2>
+            <img src="./assets/Fox.png" alt="5">
+            <p>Spot menarik flying fox ini membentang sepanjang 733 meter yang melewati danau Situ Gunung. Wahana Flying fox ini masih satu kawasan dengan Suspension Bridge.
+            Flying Fox ini menyuguhkan pemandangan danau yang dikelilingi pepohonan yang hijau. Sensi menyeberangi danau Situ Gunung dengan flying fox menjadi pengalaman yang tak akan perna terlupakan.
+            Untuk menaiki flying fox Situ Gunung ini harganya Rp 100.000 untuk sekali naik. Lalu untuk jam operasionalnya mulai dari pukul 07:00 hingga 17:00 WIB.</p>
+          </div>
+          <div class="card-body">
+            <h2>6. Keranjang Sultan</h2>
+            <img src="./assets/Fox.png" alt="5">
+            <p>Keranjang Sultan merupakan wahana kursi rotan yang akan berjalan melintasi sungai dengan rute sepanjang 100 meter. Kursi Sultan ini sangat aman bagi wisatawan, karena akan dipasangkan pengaman ke tali besi baja (sling) serta menggunakan mesin motor untuk menggerakkannya. Wahana ini bisa dijumpai sebelum perjalanan pulang dari Suspension Bridge untuk menikmati keindahan alam, baik pemandangan sungai, bebatuan, dan pohon di sekitarnya.</p>
+          </div>
+          <div class="card-body">
+            <h2>7. Glamping Ground</h2>
+            <img src="./assets/Glamping.png" alt="5">
+            <p>Glamping Situ Gunung terletak di kaki Gunung Gede Pangrango, jumlah pengunjung danau terus bertambah dan diminati lebih dari 600 persen, terutama setelah di bangunnya jembatan gantung sepanjang 240 meter.
+            Begitu banyak penginapan bermunculan di sekitar Situ Gunung, termasuk wisata glamping. Glamping Sukabumi Situ gunung anda cukup merasakan suasana tenang dan damai, jauh dari polusi udara dan suara.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more accordion items here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container text-center mt-5">
+    <p>&copy; 2024 Rekomendasi Pariwisata Kabupaten Sukabumi</p>
+  </footer>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JS for displaying current time -->
+  <script>
+    function displayTime() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString('id-ID');
+      document.getElementById('current-time').innerText = timeString;
+    }
+
+    // Call displayTime function every second
+    setInterval(displayTime, 1000);
+  </script>
+</body>
+</html>
